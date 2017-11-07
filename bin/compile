@@ -9,6 +9,18 @@ cd intltool-0.50.2
 ./configure
 make
 
+# intltool
+INTLTOOL_PACKAGE_NAME="intltool-0.50.2"
+INTLTOOL_PACKAGE_ZIP_FILE="$INTLTOOL_PACKAGE_NAME.tar.gz"
+INTLTOOL_PACKAGE_URL="http://launchpad.net/intltool/trunk/0.50.2/+download/$INTLTOOL_PACKAGE_ZIP_FILE"
+INTLTOOL_FOLDER="$BUILD_DIR/.intltool/$INTLTOOL_PACKAGE_NAME"
+mkdir -p "$BUILD_DIR/.intltool"
+cd "$BUILD_DIR/.intltool"
+wget $INTLTOOL_PACKAGE_URL
+tar -xvf $INTLTOOL_PACKAGE_ZIP_FILE
+cd $INTLTOOL_FOLDER
+./configure
+
 # inkscape
 mkdir -p "$BUILD_DIR/.inkscape/"
 cd "$BUILD_DIR/.inkscape/"
