@@ -40,9 +40,9 @@ cd $INTLTOOL_FOLDER
 # inkscape
 mkdir -p "$BUILD_DIR/.inkscape/"
 cd "$BUILD_DIR/.inkscape/"
-wget https://inkscape.org/en/gallery/item/3854/inkscape-0.91.tar.gz
-tar -xf inkscape-0.91.tar.gz
-cd inkscape-0.91
+wget https://inkscape.org/en/gallery/item/11254/inkscape-0.92.2.tar.bz2
+tar -xf inkscape-0.92.2.tar.bz2
+cd inkscape-0.92.2
 ./configure
 make
-export PATH="$BUILD_DIR/.inkscape/inkscape-0.91/bin":$PATH
+export PATH="$BUILD_DIR/.inkscape/inkscape-0.92.2/bin":$PATH
